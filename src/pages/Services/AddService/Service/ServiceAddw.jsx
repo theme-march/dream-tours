@@ -14,7 +14,7 @@ const ServiceAddw = () => {
   const handlServiceadd = (e) => {
     e.preventDefault();
 
-    fetch(`https://dream-api-topaz.vercel.app/serviceadd`, {
+    fetch(`http://localhost:5000/serviceadd`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
