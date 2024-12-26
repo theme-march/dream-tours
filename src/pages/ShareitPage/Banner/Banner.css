@@ -1,0 +1,20 @@
+.fs-h1 {
+  font-size: 5rem;
+}
+@media only screen and (max-width: 600px) {
+  .fs-h1 {
+    font-size: 3rem;
+  }
+}
+.animoson-h1-banner {
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  from {
+    color: red;
+  }
+  to {
+    color: yellow;
+  }
+}

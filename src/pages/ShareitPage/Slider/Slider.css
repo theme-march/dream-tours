@@ -1,0 +1,30 @@
+.slider-h {
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+}
+.slider-img-design {
+  position: absolute;
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 80vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .slider-h {
+    max-height: 250px;
+    width: 100%;
+  }
+  .slider-title {
+    font-size: 52px !important;
+    text-align: center;
+  }
+}
+
+.slider-title {
+  text-align: center;
+  font-size: 72px;
+  margin-top: 70px;
+}

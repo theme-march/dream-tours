@@ -1,0 +1,16 @@
+.bg-banner {
+  background-color: #7dc242;
+}
+.text-color-g {
+  color: #7dc242;
+}
+.section-gap {
+  margin: 120px 0px;
+}
+
+.hr-style {
+  width: 150px;
+  min-height: 5px;
+  margin: 0 auto;
+  border-top: 5px solid #198754;
+}

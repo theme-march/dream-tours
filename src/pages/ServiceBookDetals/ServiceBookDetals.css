@@ -1,0 +1,51 @@
+.banner-s-s {
+  position: relative;
+  min-height: 80vh;
+  z-index: 1;
+  color: #ffffff;
+}
+.service-banner {
+  position: absolute;
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.book-form {
+  border-radius: 20px;
+  background-color: #edf2f7;
+}
+.book-btn {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #ffffff;
+  color: green;
+  font-weight: bolder;
+  font-size: large;
+}
+
+.book-btn:hover {
+  transform: translatey(10px);
+}
+@media only screen and (max-width: 600px) {
+  .banner-s-s {
+    min-height: 40vh;
+  }
+  .ser-book-gap-d {
+    min-height: 0px;
+  }
+}
+
+.section-my-6 {
+  margin: 100px 0;
+}
+
+.ser-book-gap-d {
+  min-height: 247px;
+}
