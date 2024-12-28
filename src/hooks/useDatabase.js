@@ -6,9 +6,10 @@ const useDatabase = () => {
   const [dataLoadTime, setDataLoadTime] = useState(true);
   const [getDatacallagin, setgetDatacallagin] = useState(false);
   useEffect(() => {
-    //http://localhost:5000/ changing url
+    //https://dream-api-topaz.vercel.app/ changing url
+    // https://dream-api-topaz.vercel.app/showallservices
 
-    fetch(`http://localhost:5000/showallservices`)
+    fetch(`https://dream-api-topaz.vercel.app/showallservices`)
       .then((res) => res.json())
       .then((data) => {
         setServicesAll(data);
@@ -19,7 +20,7 @@ const useDatabase = () => {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/booktourslist`)
+    fetch(`https://dream-api-topaz.vercel.app/booktourslist`)
       .then((res) => res.json())
       .then((data) => {
         setBooktourslist(data);
@@ -31,7 +32,7 @@ const useDatabase = () => {
 
   // admin and user service delete
   const deletebooktoursrlist = (id) => {
-    fetch(`http://localhost:5000/delettable/${id}`, {
+    fetch(`https://dream-api-topaz.vercel.app/delettable/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -49,7 +50,7 @@ const useDatabase = () => {
   const udatebooktoursrlist = (id) => {
     setgetDatacallagin(false);
     const updateStatus = { status: "update" };
-    fetch(`http://localhost:5000/statusupdate/${id}`, {
+    fetch(`https://dream-api-topaz.vercel.app/statusupdate/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
